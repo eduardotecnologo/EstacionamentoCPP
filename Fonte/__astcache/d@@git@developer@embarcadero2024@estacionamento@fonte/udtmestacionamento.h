@@ -1,4 +1,4 @@
-//---------------------------------------------------------------------------
+﻿//---------------------------------------------------------------------------
 
 #ifndef UDtmEstacionamentoH
 #define UDtmEstacionamentoH
@@ -18,16 +18,32 @@
 #include <FireDAC.Stan.Pool.hpp>
 #include <FireDAC.UI.Intf.hpp>
 #include <FireDAC.VCLUI.Wait.hpp>
+#include <FireDAC.Comp.DataSet.hpp>
+#include <FireDAC.DApt.hpp>
+#include <FireDAC.DApt.Intf.hpp>
+#include <FireDAC.DatS.hpp>
+#include <FireDAC.Stan.Param.hpp>
+#include <FireDAC.Comp.UI.hpp>
 //---------------------------------------------------------------------------
 class TdtmEstacionamento : public TDataModule
 {
 __published:	// IDE-managed Components
-	TFDConnection *cnxEstacionamento;
-	TFDPhysPgDriverLink *FDPhysPgDriverLink1;
-	void __fastcall DataModuleCreate(TObject *Sender);
+	TFDConnection *FDConnection;
+	TFDPhysPgDriverLink *FDPhysPgDriverLink;
+	TFDQuery *qryMontadora;
+	TFDQuery *qryCondutor;
+	TFDQuery *qryModelo;
+	TFDQuery *qryTipo;
+	TFDQuery *qryVeiculo;
+	TFDGUIxWaitCursor *FDGUIxWaitCursor1;
+	TIntegerField *qryMontadoramon_cod;
+	TWideStringField *qryMontadoramon_nom;
+	TIntegerField *qryTipotip_cod;
+	TWideStringField *qryTipotip_des;
 private:	// User declarations
 public:		// User declarations
-	__fastcall TdtmEstacionamento(TComponent* Owner);
+    __fastcall TdtmEstacionamento(TComponent* Owner);
+
 };
 //---------------------------------------------------------------------------
 extern PACKAGE TdtmEstacionamento *dtmEstacionamento;
