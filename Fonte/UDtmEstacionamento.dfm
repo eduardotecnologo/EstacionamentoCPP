@@ -78,6 +78,7 @@ object dtmEstacionamento: TdtmEstacionamento
     Top = 208
     object qryTipotip_cod: TIntegerField
       DisplayLabel = 'C'#243'digo'
+      DisplayWidth = 5
       FieldName = 'tip_cod'
       Origin = 'tip_cod'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]

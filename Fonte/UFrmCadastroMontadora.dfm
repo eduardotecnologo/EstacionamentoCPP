@@ -36,6 +36,8 @@ inherited FrmCadastroMontadora: TFrmCadastroMontadora
   inherited tlbCadastroCRUD: TToolBar
     Top = 208
     Width = 751
+    ExplicitTop = 207
+    ExplicitWidth = 747
     object ToolButton4: TToolButton [1]
       Left = 73
       Top = 0

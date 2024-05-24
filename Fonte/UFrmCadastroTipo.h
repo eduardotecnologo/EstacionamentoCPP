@@ -27,6 +27,9 @@ __published:	// IDE-managed Components
 	TDBEdit *dbeCodigo;
 	TLabel *Label2;
 	TDBEdit *dbeDescricao;
+	TToolButton *ToolButton3;
+	TToolButton *ToolButton4;
+	TToolButton *ToolButton5;
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFrmCadastroTipo(TComponent* Owner);

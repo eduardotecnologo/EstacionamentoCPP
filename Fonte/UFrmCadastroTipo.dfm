@@ -36,6 +36,60 @@ inherited FrmCadastroTipo: TFrmCadastroTipo
   inherited tlbCadastroCRUD: TToolBar
     Top = 208
     Width = 751
+    object ToolButton3: TToolButton [1]
+      Left = 73
+      Top = 0
+      Width = 13
+      Caption = 'ToolButton3'
+      ImageIndex = 6
+      Style = tbsSeparator
+    end
+    inherited btnPesquisar: TToolButton
+      Left = 86
+      ExplicitLeft = 86
+    end
+    object ToolButton4: TToolButton [3]
+      Left = 159
+      Top = 0
+      Width = 13
+      Caption = 'ToolButton4'
+      ImageIndex = 6
+      Style = tbsSeparator
+    end
+    inherited btnGravar: TToolButton
+      Left = 172
+      ExplicitLeft = 172
+    end
+    object ToolButton5: TToolButton [5]
+      Left = 245
+      Top = 0
+      Width = 13
+      Caption = 'ToolButton5'
+      ImageIndex = 6
+      Style = tbsSeparator
+    end
+    inherited btnExcluir: TToolButton
+      Left = 258
+      ExplicitLeft = 258
+    end
+    inherited ToolButton1: TToolButton
+      Left = 331
+      ExplicitLeft = 331
+    end
+    inherited btnCancelar: TToolButton
+      Left = 344
+      ExplicitLeft = 344
+    end
+    inherited ToolButton2: TToolButton
+      Left = 417
+      Width = 264
+      ExplicitLeft = 417
+      ExplicitWidth = 264
+    end
+    inherited btnSair: TToolButton
+      Left = 681
+      ExplicitLeft = 681
+    end
   end
   object dbeCodigo: TDBEdit [3]
     Left = 121
@@ -56,7 +110,8 @@ inherited FrmCadastroTipo: TFrmCadastroTipo
     Left = 121
     Top = 101
     Width = 456
-    Height = 28
+    Height = 27
+    CharCase = ecUpperCase
     DataField = 'tip_des'
     DataSource = dtsPrincipal
     Font.Charset = ANSI_CHARSET

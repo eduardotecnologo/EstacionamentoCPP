@@ -16,3 +16,4 @@ __fastcall TFrmCadastroTipo::TFrmCadastroTipo(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
+
