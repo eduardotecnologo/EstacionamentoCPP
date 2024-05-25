@@ -54,6 +54,36 @@ object dtmEstacionamento: TdtmEstacionamento
       ' FROM CONDUTOR;')
     Left = 168
     Top = 80
+    object qryCondutorcon_cod: TIntegerField
+      DisplayLabel = 'C'#243'digo'
+      FieldName = 'con_cod'
+      Origin = 'con_cod'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      MaxValue = 2000
+      MinValue = 1
+    end
+    object qryCondutorcon_nom: TWideStringField
+      DisplayLabel = 'Nome'
+      DisplayWidth = 50
+      FieldName = 'con_nom'
+      Origin = 'con_nom'
+      Size = 60
+    end
+    object qryCondutorcon_cnh: TWideStringField
+      DisplayLabel = 'CNH'
+      FieldName = 'con_cnh'
+      Origin = 'con_cnh'
+      EditMask = '00000000000;0;_'
+      Size = 15
+    end
+    object qryCondutorcon_cpf: TWideStringField
+      DisplayLabel = 'CPF'
+      FieldName = 'con_cpf'
+      Origin = 'con_cpf'
+      EditMask = '000.000.000-00;1'
+      FixedChar = True
+      Size = 14
+    end
   end
   object qryModelo: TFDQuery
     Active = True

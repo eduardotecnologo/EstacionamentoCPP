@@ -40,6 +40,10 @@ __published:	// IDE-managed Components
 	TWideStringField *qryMontadoramon_nom;
 	TIntegerField *qryTipotip_cod;
 	TWideStringField *qryTipotip_des;
+	TIntegerField *qryCondutorcon_cod;
+	TWideStringField *qryCondutorcon_nom;
+	TWideStringField *qryCondutorcon_cnh;
+	TWideStringField *qryCondutorcon_cpf;
 private:	// User declarations
 public:		// User declarations
     __fastcall TdtmEstacionamento(TComponent* Owner);

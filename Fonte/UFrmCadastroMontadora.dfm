@@ -38,59 +38,37 @@ inherited FrmCadastroMontadora: TFrmCadastroMontadora
     Width = 751
     ExplicitTop = 207
     ExplicitWidth = 747
-    object ToolButton4: TToolButton [1]
-      Left = 73
+    inherited ToolButton2: TToolButton
+      Width = 264
+      ExplicitWidth = 264
+    end
+    inherited btnSair: TToolButton
+      Left = 642
+      ExplicitLeft = 642
+    end
+    object ToolButton4: TToolButton
+      Left = 715
       Top = 0
       Width = 13
       Caption = 'ToolButton4'
       ImageIndex = 6
       Style = tbsSeparator
     end
-    inherited btnPesquisar: TToolButton
-      Left = 86
-      ExplicitLeft = 86
-    end
-    object ToolButton5: TToolButton [3]
-      Left = 159
+    object ToolButton5: TToolButton
+      Left = 728
       Top = 0
       Width = 13
       Caption = 'ToolButton5'
       ImageIndex = 6
       Style = tbsSeparator
     end
-    inherited btnGravar: TToolButton
-      Left = 172
-      ExplicitLeft = 172
-    end
-    object ToolButton3: TToolButton [5]
-      Left = 245
+    object ToolButton3: TToolButton
+      Left = 741
       Top = 0
       Width = 13
       Caption = 'ToolButton3'
       ImageIndex = 6
       Style = tbsSeparator
-    end
-    inherited btnExcluir: TToolButton
-      Left = 258
-      ExplicitLeft = 258
-    end
-    inherited ToolButton1: TToolButton
-      Left = 331
-      ExplicitLeft = 331
-    end
-    inherited btnCancelar: TToolButton
-      Left = 344
-      ExplicitLeft = 344
-    end
-    inherited ToolButton2: TToolButton
-      Left = 417
-      Width = 264
-      ExplicitLeft = 417
-      ExplicitWidth = 264
-    end
-    inherited btnSair: TToolButton
-      Left = 681
-      ExplicitLeft = 681
     end
   end
   object dbeCodMontadora: TDBEdit [3]
